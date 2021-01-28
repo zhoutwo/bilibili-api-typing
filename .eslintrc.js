@@ -42,13 +42,13 @@ module.exports = {
         format  : ['PascalCase']
       }
     ],
-    '@typescript-eslint/semi'          : ['error', 'never'],
+    '@typescript-eslint/semi'          : ['error', 'always'],
     'arrow-parens'                     : ['error', 'as-needed'],
     'comma-dangle'                     : ['error', 'never'],
     curly                              : ['error', 'multi'],
     'eol-last'                         : ['error', 'always'],
     'import/no-extraneous-dependencies': [
-      'error', 
+      'error',
       {
         'devDependencies': true
       }
@@ -78,13 +78,14 @@ module.exports = {
       'error',
       {
         'allowAfterThis'      : true,
-        'enforceInMethodNames': false 
+        'enforceInMethodNames': false
       }
     ],
     'object-curly-spacing'       : ['error', 'always'],
     'prefer-const'               : 'error',
     radix                        : ['error', 'as-needed'],
-    semi                         : [2, 'never'],
+    semi                         : [2, 'always'],
+    'typescript-sort-keys/interface': 'off',
     'sort-keys'                  : 'error',
     'sort-keys-fix/sort-keys-fix': 'warn',
     'space-before-function-paren': [
