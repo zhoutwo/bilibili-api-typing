@@ -1,3 +1,5 @@
+import { SearchResponse } from './search-response';
+
 export interface Category {
   id: number;
   parent_id: number;
@@ -102,7 +104,7 @@ export interface Article {
   dispute: string | null;
 }
 
-export interface ListArticleData {
+export interface SearchArticleData {
   articles: Article[];
   /**
    * Page number. Starts from 1.
@@ -121,20 +123,7 @@ export interface ListArticleData {
 }
 
 /**
- * The response object of listing all articles uploaded by a given user.
+ * The response object of searching for all articles uploaded by a given user.
  * Example: https://api.bilibili.com/x/space/article?mid=168598&pn=1&sort=publish_time
  */
-export interface ListArticleResponse {
-  /**
-   * 0 if no error.
-   */
-  code: number;
-
-  /**
-   * "0" if no error.
-   */
-  message: string;
-
-  ttl: number;
-  data: ListArticleData;
-}
+export type SearchArticleResponse = SearchResponse<SearchArticleData>;

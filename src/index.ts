@@ -1,1 +1,2 @@
-export * from './articles';
+export * from './search-articles';
+export * from './search-videos';
