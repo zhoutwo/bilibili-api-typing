@@ -1,4 +1,4 @@
-# bilibili-api-typing
+# bilibili-api-typing ![Node.js CI](https://github.com/zhoutwo/bilibili-api-typing/workflows/Node.js%20CI/badge.svg)
 
 TypeScript definitions of BiliBili API responses.
 
