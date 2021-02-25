@@ -5,7 +5,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:typescript-sort-keys/recommended',
     'prettier',
-    'prettier/@typescript-eslint'
   ],
   parser       : '@typescript-eslint/parser',
   parserOptions: {
